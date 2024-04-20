@@ -80,7 +80,7 @@ Exemple de modèle : https://civitai.com/models/241415?modelVersionId=272376
 - Ouvrir un nouveau terminal de connexion SSH ```Settings > Nouvelle connexion``` [Associer]
 - Tapper ```sudo -s``` 
 - Se placer dans le répertoire des check points ```cd /opt/ComfyUI/models/checkpoints/```
-- Tapper ```aria2c -x 8 https://civitai.com/api/download/models/27237```
+- Tapper ```aria2c -x 8 https://civitai.com/api/download/models/272376```
 - Attendre la fin du téléchargement
 - Dans l'interface de Comfy UI - Cliquer sur Refresh pour voir le modèle téléchargé.
 
