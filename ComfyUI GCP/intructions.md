@@ -26,26 +26,26 @@ Dans Filtre : tapper le nom du Quota. Puis [MODIFIER LES QUOTAS] en haut à droi
 
 ---
 
-### Configuration de la VM <sup>(a faire une seule fois)</sup>
+### Configuration de la VM <sup>(à faire une seule fois)</sup>
 Cliquer sur Connecter [SSH]
 - Dans le terminal, le message : ```Would you like to install the Nvidia driver? [y/n]```
-- Tappez y - puis Entrée
+- Tapper y - puis Entrée
 - *Attendre la fin de l'installation des drivers NVidia*
-- Tappez ```sudo -s``` puis Entrée
-- Tappez ```apt update``` puis Entrée
-- Tappez ```apt install aria2``` puis Entrée (Confirmer 'y')
-- Tappez```pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121``` puis Entrée
+- Tapper ```sudo -s``` 
+- Tapper ```apt update``` 
+- Tapper ```apt install aria2```  (Confirmer 'y')
+- Tapper ```pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121``` 
 
 La VM est prête.
 
 ---
 
-### Installation de Comfy-UI <sup>(a faire une seule fois)</sup>
+### Installation de Comfy-UI <sup>(à faire une seule fois)</sup>
 
-- Tappez ```cd /opt``` puis Entrée
-- Tappez ```git clone https://github.com/comfyanonymous/ComfyUI.git``` puis Entrée
-- Tappez ```cd ComfyUI/``` puis Entrée 
-- Tappez ```pip install -r requirements.txt``` puis Entrée
+- Tapper ```cd /opt``` 
+- Tapper ```git clone https://github.com/comfyanonymous/ComfyUI.git``` 
+- Tapper ```cd ComfyUI/```
+- Tapper ```pip install -r requirements.txt``` 
 
 Comfy UI est installé.
 
@@ -53,13 +53,13 @@ Comfy UI est installé.
 
 ### Lancer Comfy UI
 - Se placer dans le répertoire Comfy UI : ```cd /opt/ComfyUI```
-- Tappez ```python3 main.py --listen 0.0.0.0 --port 80``` puis Entrée  
+- Tappez ```python3 main.py --listen 0.0.0.0 --port 80``` 
 
 Comfy UI est lancé, le terminal affiche : 
 ```bash
 Starting server
 To see the GUI go to: http://0.0.0.0:80
-````
+```
 ---
 ### Accéder à Comfy UI dans un navigateur
 Dans la console Google Cloud : https://console.cloud.google.com/compute
@@ -78,9 +78,9 @@ Exemple de modèle : https://civitai.com/models/241415?modelVersionId=272376
 
 - Bouton droit sur le bouton de téléchargement : ```Copier l'adresse du lien```
 - Ouvrir un nouveau terminal de connexion SSH ```Settings > Nouvelle connexion``` [Associer]
-- Tappez ```sudo -s``` puise Entrée
-- Se placer dans le répertoire des check points ```cd /opt/ComfyUI/models/checkpoints/``` puis Entrée
-- Tappez ```aria2c -x 8 https://civitai.com/api/download/models/27237````
+- Tapper ```sudo -s``` 
+- Se placer dans le répertoire des check points ```cd /opt/ComfyUI/models/checkpoints/```
+- Tapper ```aria2c -x 8 https://civitai.com/api/download/models/27237```
 - Attendre la fin du téléchargement
 - Dans l'interface de Comfy UI - Cliquer sur Refresh pour voir le modèle téléchargé.
 
