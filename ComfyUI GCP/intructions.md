@@ -84,6 +84,13 @@ Exemple de modèle : https://civitai.com/models/241415?modelVersionId=272376
 - Attendre la fin du téléchargement
 - Dans l'interface de Comfy UI - Cliquer sur Refresh pour voir le modèle téléchargé.
 
+Certains modèle sont protégés. Vous devez disposer d'un compte Civitai et d'un TOKEN. Si le téléchargement échoue pour un problème d'authentification : 
+- Créer un compte Civitai (gratuit)
+- Allez dans votre profil Civitai > Account settings
+- Section API Keys > Add API Key > Notez bien la clé 
+- Ajouter : ?token=xxxxxxxxx à l'url de téléchargement du modèle
+
+
 
 
 
